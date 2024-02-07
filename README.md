@@ -1,4 +1,4 @@
-#MIS353 Projects
+# MIS353 Projects
 * W.I.S.H
 
 ## W.I.S.H
