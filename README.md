@@ -28,3 +28,5 @@ Beautiful in it's own government built sort of way. Basic yet cluttered at the s
 * [Overlayed Weather](https://github.com/jvicu2001/Simple-Weather-Overlay) Making weather simple may mean a website that displays minimal information with some sort of nice background. Maybe somebody might want that, I guess. I like his readme's inclusion of images and a list of features.
 * [Somebody else's school project](https://github.com/R0shish/weather-site) Great design all around, especially in terms of layout and text styling. I want to use pieces of the css.
 
+## References
+I used [W3's](w3schools.com) guides for JavaScript, HTML, CSS, and Boostrap5. I also used their geolocation script. The boostrap.css file is directly pulled from the Default theme on [Bootswatch](Bootswatch.com)
