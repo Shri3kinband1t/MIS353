@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Index</title>
+<link rel="stylesheet" href="site.css">
+<link href="bootstrap.css" rel="stylesheet" media="screen">
+</head>
+<body <!--class="text-bg-primary"-->
+<center>
+<div>
+<h1 style="font-size:300%;">W.I.S.H.</h1>
+<h2>Weather Is Stupid Hard<h2/>
+</div>
+<br></br>
+<br></br>
+
+<h2>First Time Setup</h3>
+
+<p>Enter the temperature (in Fahrenheit) you would find either, too cold, too hot, or just right, in the corresponding season</p>
+
+<table class="table" data-bs-theme="dark">
+   <tr>
+   <th></th>
+   <th>Winter</th>
+   <th>Spring</th> 
+   <th>Summer</th>
+   <th>Fall</th>
+   </tr>
+   <tr>
+   
+   <th>Too Hot</th>
+   <td> <input type="text" name=THWinter</td>
+   <td> <input type="text" name=THSpring</td>
+   <td> <input type="text" name=THSummer</td>
+   <td> <input type="text" name=THFall</td>
+   </tr>
+   <tr>
+   
+   <th>Perfect</th>
+   <td> <input type="text" name=PWinter</td>
+   <td> <input type="text" name=PSpring</td>
+   <td> <input type="text" name=PSummer</td>
+   <td> <input type="text" name=PFall</td>
+   </tr>
+   <tr>
+   
+   <th>Too Cold</th>
+   <td> <input type="text" name=TCWinter</td>
+   <td> <input type="text" name=TCSpring</td>
+   <td> <input type="text" name=TCSummer</td>
+   <td> <input type="text" name=TCFall</td>
+  </tr>
+</table>
+
+<br></br>
+<input type="Submit" name=submitButton id=submitButton onclick=getLocation() class="btn btn-primary" value="Load Weather">
+<br></br>
+
+<a href="/weather.html">Weather Page (The lat and long coords, aswell as all data input in to the table will be added to the end of this link, and the user will be sent there upon hitting submit. This anchor and the paragraphs serving to print the coords are not permanent and will not be included in future submissions.</a>
+<p id="latOut"></p>
+<p id="lonOut"></p>
+<script> <!-- w3Schools geolocation script -->
+const lat = document.getElementById("latOut");
+const lon = document.getElementById("lonOut");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+function showPosition(position) {
+  lat.innerHTML = position.coords.latitude;
+  lon.innerHTML = position.coords.longitude; 
+}
+</script>
+</center>
+</body>
+</html>
